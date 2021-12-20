@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "8d7ceb27f0f16c94",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f0c44fdc13993ba",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Concurrency.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "23fce66309b358ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f18eb27ba63c313",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb3742033d2d5910",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "874d6bf877f395eb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "58e2d725f50acf7c",
+    "type": "split",
+    "children": [
+      {
+        "id": "cae44d4b67536887",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25b4f7638bdf5043",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Concurrency.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8f0c44fdc13993ba",
+  "lastOpenFiles": [
+    "Concurrency.md",
+    "Real-Time Systems.md",
+    "Internal.md",
+    "History of Operating Systems.md",
+    "Introduction.md",
+    "Pasted image 20211206013820.png"
+  ]
+}

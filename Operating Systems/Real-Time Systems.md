@@ -1,0 +1,76 @@
+# Real-Time Systems
+
+Real Time is a quantitative notion of time, Real time is measured using a physical (real ) clock.
+
+whenever we quantify time using a physical clock, we deal with real time.
+
+Thus,
+
+A system is called real-time system, when we need quantitative expression of time (real time) to describe the behavior of the system.
+
+Eg: when temperature of th reaction chamber attains certain predetermined temperature value, say 250c, the system automatically switched off the heater within say 30 milli seconds. is clearly a realtime system.
+
+This example is a description of partial behavior of systems.
+
+the complete behavior of a system can be described by listing its response to various external stimuli.
+
+it may be noted that all the clauses in the description of the behavior of a real time system need not involve quantitative measure of time.
+
+![[Pasted image 20211220002038.png]]
+
+Sensor:
+a sensor converts some physical characteristic of its environment into electrical signals.
+
+Actuator:
+a actuator is any device that takes its inputs from the output interface of a computer and converts these electrical signals into some physical actions on its environment.
+
+Signal conditioning units:
+the electical signals produced by a computer can rarely be used to directly dirive an actuator, the computer signals usually need conditioning before they can be used by the actuator. this is caled output conditioning.
+
+similarly input conditioning is required to be carried our on sensor signals before they can be accepted by the computer.
+
+Interface unit:
+commands from CPU are delivered to the actuator through an output interface. the two main ffunctional blocks of an output interface are , 
+the interface takes care of the buffering and the handshake control aspects.
+the CPU selects a data register of the output interface and writes the necessary data to it, then the output interface converts the data to analof form and ouputs to the actuator circuitry.
+
+## characteristics of real-time systems
+
+### Time constrainsts:
+every real-time task is associated with some time constraints. one form of time constraints that is very common is deadlines associated with tasks, a task deadline specifies the time before which the task must complete and produce the results.
+
+### New correctness criterion:
+the notion of correctness in realtime systems is different from that used in the context of traditional systems. in realtime systems, correctness implies not only logical correctness of the results, but the time at which the results are produced is important. a logically correct result produced after the deadline would be considered as an incorrect resullt.
+
+### Embedded:
+A vast majority of realtime systems are embedded in nature, an embedded computersystem is physically embedded in its environment and often controls it. the sensors of the realtime computer collects data from the environment, pass them on to the realtime computer for processing. the computer in turn passes the information to the actuators to carry out the necessary work on the environment, whihc results in controlling some characteristics of the environment.
+
+### safety criticality:
+for traditional nonrealtime systems safety and reliability are independent issues. however in many realtime systems these two issues are intricately bound together making them safety-critical, a safety critical system is required to be highly reliable since any failures of the system can cause extensive damages.
+
+### Concurrency
+A realtime system usually needs to respond to serveral independent events within very short and stict time bounds, thus they must process data from the sensors concurrently, otherwise the signals may be lost and the system may malfunction.
+
+### Distributed and feedback structure
+Many distributed as well as centralized realtime systems have a feedback structure, in which the sensors usually sense the environment periodically, the sensed data about the environment is processed to determine the corrective actions necessary. the results of the processing are used to carryy out the necessary actions on the environment through actuators, which in turn again cause a change to the required characteristics of the controlled environment
+
+### Task criticality:
+ Task criticality is a measure of the cost of failure of a task. a realtime system may have tasks of very different criticality, it is therefore natural to expect that the criticality of the different tasks must be taken into consideration while desiging for fault-tolerence.
+ 
+ ### custom hardware:
+ a real time system is often implemented on custom hardware that is specifically designed and developed for the purpose.
+ 
+ ### reactive
+ a reactive sytem is one in which an on going interaction between the computer and the environment is maintained. therefore the computations in realtime system can be considered to be non-terminating.
+ 
+ 
+ ## Events in a reat-time system
+ 
+ ### Stimulus Events:
+ Stimulus events are generated by the environment and act on the system. these events can be produced asynchronously. for example a user pressing a button in a phone generated stimulus events to act on the system.
+ 
+ ### Response Events:
+ Response events are usually produced by the system in response to some stimulus events, response events act on the evnironment. for example, consider a chemical plant where as soon as the temperature exeeds 100c, the system responds by switching the heater.
+ 
+ 
+ 
