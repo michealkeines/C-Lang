@@ -1,0 +1,17 @@
+The most common set of errors the we may encounter,
+
+-Dereferencing of unintialized or otherwise invalid pointer
+-Insufficient or None allocated storage for operation
+-Storage used after free
+-Allocation freed repeatedly
+-Free of unallocated or potentially storage
+-Free of stack space
+-Return directly or via argument of pointer to local variable
+-Dereference of wrong type
+-Assignment of incompatable types
+-Program logic confuses pointer and referenced types
+-Incorrect use of pointer arithmetic
+-Array index out of bounds
+
+
+

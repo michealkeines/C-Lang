@@ -1,0 +1,39 @@
+The Poiner Lexicon
+
+type *ptr : A pointer of type named ptr
+
+eg: char *names = { "name1", "name2", "name3" };
+
+an address is stored in names variable, that is the location of series of characters
+
+*ptr : The value of whatever ptr is pointed at
+
+eg: 
+
+int a = 10;
+int *address_of_a = &a; // saving the address of a
+
+printf("%d\n", *(address_of_a)); // taking whatever that is in that address
+
+*(ptr + i) : The value of (whatever pts is pointed at plus i)
+
+eg:
+
+int *nums = { 1,2,3,4,5 };
+printf("%d\n", *(nums+0)); // index 0
+printf("%d\n", *(nums+1)); // index 1
+printf("%d\n", *(nums+2)); // index 2
+
+Adding 4bytes to the address if index 0 is at 0x52222230, then index 1 will be 0x52222234 and so on
+
+integer takes 4 bytes space
+
+&thing : The address of thing
+type *ptr = &thing : A pointer of type named ptr set to the address of thing
+
+eg:
+
+int c = 10;
+
+int* address_of_variable_c = &c; // & is to get the address of any variable
+

@@ -1,0 +1,18 @@
+Usefull commands:
+
+r - run
+b - break
+c - continue it it reaches the next breakpoint or end of the program
+n - run the next line of code, stepping over functions
+s - run the next line of code, stepping into functions
+l - list the source code
+
+q - quit
+
+print expr - print out any expression
+display var - display the variable at every step
+
+bt - lists the call stack with variables passed it
+
+
+
