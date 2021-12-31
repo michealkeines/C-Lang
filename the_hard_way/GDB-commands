@@ -10,7 +10,7 @@ l - list the source code
 q - quit
 
 print expr - print out any expression
-display var - display the variable at every step
+display var - display the variable at every breakpoint, helps to keep track of changes in a varible as step through the code
 
 bt - lists the call stack with variables passed it
 
