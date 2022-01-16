@@ -1,0 +1,21 @@
+Functions in C are actually just pointers to a spot in the program where some code exists.
+
+just like we created pointers to structs, strings, array we can point a pointer at a function.
+
+this is usefulluf for passing callbacks to other functions
+
+
+
+return_type (*Pointer_name)(arguments);
+
+int test_function(int a, int b);
+
+int (*compare)(int a, int b) = test_function;
+
+
+we can use typedef to make it aproper variable that could be passed to function
+
+typedef int (*compare)(int a, int b);
+
+
+int test(int val, compare callback);
