@@ -64,3 +64,7 @@ eg: send_packet(temp_packet) x 10;
 
 this will call send_packet 10 times
 
+
+
+In NASL there is no way you can open connection to some specific host, this way, a NASL script cannot be trojaned
+
