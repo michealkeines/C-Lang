@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "command.md",
+            "file": "openvas.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "command.md",
+                "file": "openvas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,7 +89,9 @@
   },
   "active": "22bc53384c492860",
   "lastOpenFiles": [
+    "openvas.md",
     "command.md",
+    "Script information.md",
     "Knowledge base (KB).md",
     "basics.md",
     "Constants.md",
