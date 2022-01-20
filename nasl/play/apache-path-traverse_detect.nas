@@ -1,6 +1,6 @@
 if (description)
 {
-  script_oid("1.3.6.1.4.1.25623.1.0.117710");
+  script_oid("1.3.6.1.4.1.26629.1.0.117710");
   script_cve_id("CVE-2021-42013");
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
   script_name("Apache HTTP Server 2.4.49 - 2.4.50 Directory Traversal / RCE Vulnerability - Linux");

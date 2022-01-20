@@ -16,4 +16,7 @@ we use 2 and 3
 in scripts we use 2
 
 
+port discovery is uses nmap
 
+
+consolidations 

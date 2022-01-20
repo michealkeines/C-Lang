@@ -16,3 +16,8 @@ we can set the knowledge base using --kb "attribute=value"
 
 --kb="Services/www=443"
 
+
+the script gets precendence, so we have to stack them in proper order
+
+0 -> 1 -> 2 -> 3
+
