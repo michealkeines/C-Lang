@@ -1,0 +1,19 @@
+static (file) This keyword is kind of the inverse of extern, and says that the
+variable is only used in this .c file and should not be available to other
+parts of the program. Keep in mind that static at the file level (as with
+THE_AGE here) is different than in other places.
+
+Static int age = 10; // this is accessible within the file where it is declared
+
+
+static (function) If you declare a variable in a function static, then that
+variable acts like a static defined in the file, but it’s only accessible
+from that function. It’s a way of creating constant state for a function, but
+in reality it’s rarely used in modern C programming because they are hard
+to use with threads
+
+int test(int val) {
+	static int t = 10; // this will also act like a static defined within a file
+	t = val;
+	return t;
+}

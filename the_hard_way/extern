@@ -1,0 +1,5 @@
+extern This keyword is a way to tell the compiler “the variable exists, but it’s
+in another ‘external’ location.” Typically this means that one .c file is going
+to use a variable that’s been defined in another .c file
+
+

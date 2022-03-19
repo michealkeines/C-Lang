@@ -32,5 +32,5 @@ typedef -> create a new type
 union -> start a union statement
 unsigned -> a unsigned modifies for integer data types
 void -> declare a data type empty
-volatile -> declare a variable might be modified elsewhere
+volatile -> indicates that the compiler shouldnt do any fancy optimization for this variable
 while -> start a while loop
