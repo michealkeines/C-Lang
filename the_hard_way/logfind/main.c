@@ -2,12 +2,16 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include "search.h"
 
 void search_string(char ** input_strings, int input_len, bool match_or) {
+	char txt[] = "ABAAABCDAKAJSHDAHSDKABCALSKDLASJDABALDJLAABCCA";
+
 	for (int i = 0; i < input_len; i++) {
 		printf("%s\n", input_strings[i]);
+		search(txt, input_strings[i]);
 	}
-
+	
 
 }
 
