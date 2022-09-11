@@ -7,6 +7,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
 
 #define ISVALIDSOCKET(s) ((s) >= 0)
 #define CLOSESOCKET(s) close(s)
