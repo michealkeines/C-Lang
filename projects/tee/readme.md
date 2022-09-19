@@ -17,6 +17,6 @@ it can used in either append mode or overwrite
 
 # OUTPUT
 
-![output screenshot](./output.png?raw=true "Optional Title")
+![output screenshot](https://github.com/michealkeines/C-Lang/blob/main/projects/tee/output.png)
 
 
