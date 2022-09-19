@@ -17,6 +17,6 @@ it can used in either append mode or overwrite
 
 # OUTPUT
 
-![output screenshot](https://github.com/michealkeines/C-Lang/blob/main/projects/tee/output.png)
+![output screenshot](https://raw.githubusercontent.com/michealkeines/C-Lang/main/projects/tee/output.png)
 
 
