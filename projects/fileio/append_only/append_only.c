@@ -12,7 +12,7 @@ main(int argc, char *argv[])
     int fd;
     char *name = "file.txt";
 
-    mode_t open_mode = O_APPEND;
+    mode_t open_mode = O_RDWR | O_APPEND;
 
     int flags = S_IRUSR | S_IRGRP | S_IRGRP | S_IRGRP;
 
@@ -29,17 +29,26 @@ main(int argc, char *argv[])
         fprintf(stderr, "Couldn't set seek to top\n");
         exit(EXIT_FAILURE);
     }
+    printf("Current offset %lld\n", top);
 
-    char *buff = "This will be appended hopefully\n";
+    char *buff = argv[1];
+    size_t len = strlen(buff);
+    if (len <= 2) {
+        fprintf(stderr, "nothing to write\n");
+        exit(EXIT_FAILURE);
+    }
 
-    size_t bytes_written = write(fd, buff, sizeof(buff));
+    buff[len - 2] = '\n';
+    buff[len - 1] = '\0';
+
+    size_t bytes_written = write(fd, buff, len);
 
     if (bytes_written  == -1) {
         fprintf(stderr, "Not written\n");
         exit(EXIT_FAILURE);
     }
 
-    if (bytes_written != sizeof(buff)) {
+    if (bytes_written != len) {
         fprintf(stderr, "not fully written\n");
         exit(EXIT_FAILURE);
     }
