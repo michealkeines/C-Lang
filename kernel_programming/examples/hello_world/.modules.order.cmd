@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/hello_world/modules.order := {   echo /home/micheal/C-Lang/kernel_programming/examples/hello_world/hello_world.ko; :; } | awk '!x[$$0]++' - > /home/micheal/C-Lang/kernel_programming/examples/hello_world/modules.order
