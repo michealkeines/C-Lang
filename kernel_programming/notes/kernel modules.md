@@ -52,3 +52,9 @@ install:
 clean:
         make -C /lib/modules/$(uu)/build/ M=$(PWD) clean
 ```
+
+
+to check the kernel logs, we can use dmesg command
+
+to clear the kernel logs, `dmesg -C`
+
