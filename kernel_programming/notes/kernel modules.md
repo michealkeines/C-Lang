@@ -53,8 +53,35 @@ clean:
         make -C /lib/modules/$(uu)/build/ M=$(PWD) clean
 ```
 
+obj-m = we want this object file to be separate from the actual kerel
+obj-y = we want this object file to be included to the actual kernel code
+
+make -C = this will change directory to the specfied location
+
+M=PWD = after parsing the kernel Makefile, we are switching back to the original kernel module directory and the compiile it
+
+
 
 to check the kernel logs, we can use dmesg command
 
 to clear the kernel logs, `dmesg -C`
+
+
+curent log level - all messages less than this will be printed to the console
+
+default level for message that lack an explicit log level
+
+the minimum allowed log level
+
+the boot time default log level
+
+![[Pasted image 20230116085028.png]]
+
+we can jstu manipulate there values to chagne the log level
+
+`echo "8 4 1 7" > printk`
+
+every possible log will be passed to console
+
+kernel logs buffer is /dev/kmsg
 

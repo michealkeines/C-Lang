@@ -209,10 +209,11 @@
   },
   "active": "d78abf8dddd9253c",
   "lastOpenFiles": [
-    "arch of kernel.md",
-    "story of loading the kernel.md",
     "kernel setup.md",
+    "story of loading the kernel.md",
     "Untitled.md",
+    "kernel modules.md",
+    "arch of kernel.md",
     "man.md"
   ]
 }
