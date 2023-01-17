@@ -60,6 +60,10 @@ make -C = this will change directory to the specfied location
 
 M=PWD = after parsing the kernel Makefile, we are switching back to the original kernel module directory and the compiile it
 
+if we have multiple source files
+
+obj-m := fiinal.o
+final-objs := file.o file2.0 file3.o
 
 
 to check the kernel logs, we can use dmesg command
