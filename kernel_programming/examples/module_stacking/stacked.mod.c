@@ -26,22 +26,17 @@ __section(".gnu.linkonce.this_module") = {
 MODULE_INFO(retpoline, "Y");
 #endif
 
-SYMBOL_CRC(llkd_sysinfo, 0x71948d35, "_gpl");
 
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
 	{ 0xbdfb6dbb, "__fentry__" },
-	{ 0xa916b694, "strnlen" },
-	{ 0xfb578fc5, "memset" },
-	{ 0x656e4a6e, "snprintf" },
-	{ 0xcbd4898c, "fortify_panic" },
 	{ 0x92997ed8, "_printk" },
+	{ 0x71948d35, "llkd_sysinfo" },
 	{ 0x5b8239ca, "__x86_return_thunk" },
-	{ 0xd0da656b, "__stack_chk_fail" },
 	{ 0xa98b56fc, "module_layout" },
 };
 
-MODULE_INFO(depends, "");
+MODULE_INFO(depends, "min_sysinfo");
 
 
-MODULE_INFO(srcversion, "31040E9B011720A4DE183E5");
+MODULE_INFO(srcversion, "EC4402348E0CCB4962C8CDF");

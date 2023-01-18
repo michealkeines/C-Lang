@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/module_stacking/stacked.mod := printf '%s\n'   stacked.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/module_stacking/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/module_stacking/stacked.mod

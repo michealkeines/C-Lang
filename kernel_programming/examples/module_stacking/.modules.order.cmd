@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/module_stacking/modules.order := {   echo /home/micheal/C-Lang/kernel_programming/examples/module_stacking/min_sysinfo.ko;   echo /home/micheal/C-Lang/kernel_programming/examples/module_stacking/stacked.ko; :; } | awk '!x[$$0]++' - > /home/micheal/C-Lang/kernel_programming/examples/module_stacking/modules.order

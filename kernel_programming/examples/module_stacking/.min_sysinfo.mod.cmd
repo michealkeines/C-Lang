@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/module_stacking/min_sysinfo.mod := printf '%s\n'   min_sysinfo.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/module_stacking/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/module_stacking/min_sysinfo.mod

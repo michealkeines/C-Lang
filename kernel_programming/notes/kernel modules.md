@@ -65,6 +65,21 @@ if we have multiple source files
 obj-m := fiinal.o
 final-objs := file.o file2.0 file3.o
 
+stacking kernel modules
+
+write function in a code module and export those using EXPORT_SYMBOL
+
+this way all other kernel module should be to call directly just by using extern
+
+if we were to export it using EXPORT_SYMBOL_GPL, only other modules withj GPL lisence can use this 
+
+during compilation, the dependencies c and object should also be present in the current working dirctory
+
+if we want to removed stacked modules, we have to remove them top down
+
+![[Pasted image 20230118112029.png]]
+
+
 
 to check the kernel logs, we can use dmesg command
 
