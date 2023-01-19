@@ -15,8 +15,8 @@ extern void llkd_sysinfo(void);
 static int __init min_sysinfo_init(void)
 {
     pr_info("%s: calling sys\n", MODULENAME);
-    
-    llkd_sysinfo();
+    if (debug > 1)
+        llkd_sysinfo();
 
     return 0;
 }

@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/param_passing/param_pass.mod := printf '%s\n'   param_pass.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/param_passing/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/param_passing/param_pass.mod

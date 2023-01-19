@@ -79,7 +79,40 @@ if we want to removed stacked modules, we have to remove them top down
 
 ![[Pasted image 20230118112029.png]]
 
+to pass argumemnt to the kernel module, we can set value during inseration
 
+sudo insmod file.ko variable_name=value
+
+to declare a variiable as something can pass, we use module_param macro
+
+it takes there input,
+
+module_param(
+	variable_name,
+	datatype,
+	permission
+)
+
+```c
+static int debug_mode;
+module_param(
+	debug_mode,
+	int,
+	0600
+);
+```
+
+every module parameter will be mapped to file descriptor, that way, the users who have the permission can chagne the values during runtime or after instertion
+
+located under `/sys/module/<module name>/parameters/`
+
+```
+// 4,2,1 => 7,
+
+// w and r = 6 for current user and 0 for rest
+
+// that how we got 600
+```
 
 to check the kernel logs, we can use dmesg command
 

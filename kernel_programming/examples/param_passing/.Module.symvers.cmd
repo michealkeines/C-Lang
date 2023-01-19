@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/param_passing/Module.symvers := sed 's/ko$$/o/' /home/micheal/C-Lang/kernel_programming/examples/param_passing/modules.order | scripts/mod/modpost -m   -o /home/micheal/C-Lang/kernel_programming/examples/param_passing/Module.symvers -e -i Module.symvers   -T -
