@@ -114,6 +114,12 @@ located under `/sys/module/<module name>/parameters/`
 // that how we got 600
 ```
 
+if we have internal variable that we want to override, then we could use this marco to override the variable use a module paramter during insertion or dynamially using fd
+
+```c
+module_param_named(new_debug_mode, debug_mode, int, 0600);
+```
+
 to check the kernel logs, we can use dmesg command
 
 to clear the kernel logs, `dmesg -C`
@@ -137,3 +143,29 @@ every possible log will be passed to console
 
 kernel logs buffer is /dev/kmsg
 
+
+autoloading kernel moduels
+
+- compile the kernel module
+- using install copy the compiled module into /lib/modules
+- create a config file under `/etc/modules-load.d/<module name>.conf`
+- the config file content is just name of the kernel module withoout extension
+- or we can oculd add the name of the module iinsdde module.conf file
+
+after this if we restart the kernel, this module will be autolaoded
+
+if we want to pass parameters to the autoloaded module,
+
+we can use modprob
+
+we have to create a config file with options that we want to set
+
+`/etc/modprob.d/<module name>.conf`
+
+```
+option <module name> parameter=value
+```
+
+modules.order file is used by tthe kernel to load the modules in an order
+
+modules.dep has the dependency information

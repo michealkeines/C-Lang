@@ -12,13 +12,15 @@ static int debug_mode;
 module_param(
     debug_mode,
     int,
-    0600
+    0600 
 );
 
 // 4,2,1 => 7, 
 
 // w and r = 6 for current user and 0 for rest 
 // that how we got 600
+module_param_named(new_debug_mode, debug_mode, int, 0600);
+
 
 static int __init param_pass_init(void)
 {
