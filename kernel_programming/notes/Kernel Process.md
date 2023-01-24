@@ -21,3 +21,21 @@ kernel thread will only have one stack, as the will never execute in user space
 
 ![[Pasted image 20230123114203.png]]
 
+within kernel code we shouldnt get a page fault this is acheive by using a static kerenel stack, tthat way we konw for sure that when we enter into kernel context, our pages will  alos be paged
+
+kernel static is of fixed size that is 2k in 32bit arch and 4k in 64 arch
+
+in x86 and arm if a hardware intrupppt occurs, the kernel is create an intruppt stack which will hold the intruupt handler method
+
+to view kernel stack of pid, we hae fd that is mapped in /proc
+
+![[Pasted image 20230124092422.png]]
+
+bottom to top, entry will be botom and do_sys will be the top frame, that is current function that isgetting executed
+
+this is just the kernel stack of proces
+
+to view the stack of an user mode proces, we could jsut attack to the pid using gdb, 
+
+`thread apply all bt`
+
