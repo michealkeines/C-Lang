@@ -39,3 +39,16 @@ to view the stack of an user mode proces, we could jsut attack to the pid using 
 
 `thread apply all bt`
 
+![[Pasted image 20230125090957.png]]
+
+
+task_struct is at inlcude/linux/sched.h
+
+all the task struct objects in kernel memory are chained up on a circular doubly linked list called the task list
+
+current is the macro that allows us to get the thread specific task_struct
+
+in RISC arch we have specific register that hold this pointer
+
+code for current is located at /arch/arm/include/asm/current.h
+

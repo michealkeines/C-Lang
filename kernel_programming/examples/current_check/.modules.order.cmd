@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/current_check/modules.order := {   echo /home/micheal/C-Lang/kernel_programming/examples/current_check/current_check.ko; :; } | awk '!x[$$0]++' - > /home/micheal/C-Lang/kernel_programming/examples/current_check/modules.order

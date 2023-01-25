@@ -1,0 +1,1 @@
+/home/micheal/C-Lang/kernel_programming/examples/current_check/current_check.o
