@@ -8,55 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "00ae6a976c9ee593",
+            "id": "abe54fd08fbd3826",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/objectives.md",
+                "file": "theory/sources.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "536def5deab41882",
+            "id": "87476755d3ff9932",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/release.md",
+                "file": "theory/building.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d1fe6d16be77d277",
+            "id": "4d408ec82bcbecbd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/kernel trees.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7f446a045cbfabd6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "theory/patches.md",
+                "file": "theory/remove-custom kernels.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theory/patches.md",
+                "file": "theory/remove-custom kernels.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "theory/patches.md",
+                "file": "theory/remove-custom kernels.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theory/patches.md"
+                "file": "theory/remove-custom kernels.md"
               }
             }
           }
@@ -183,12 +171,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7f446a045cbfabd6",
+  "active": "4d408ec82bcbecbd",
   "lastOpenFiles": [
-    "theory/objectives.md",
+    "theory/building.md",
+    "theory/sources.md",
+    "theory/dev configuration.md",
     "theory/patches.md",
     "theory/kernel trees.md",
     "theory/release.md",
+    "theory/objectives.md",
+    "Untitled.md",
     "chapter1.md"
   ]
 }
