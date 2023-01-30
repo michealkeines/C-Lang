@@ -12,6 +12,24 @@ check minimum requirements to compiel a kernel
 https://www.kernel.org/doc/html/latest/process/changes.html
 ```
 
+```
+    Open the .config file in the root directory of the kernel source code.
+
+    Ensure that the following configuration options are set:
+
+makefile
+
+CONFIG_BLK_DEV_INITRD=y
+CONFIG_INITRAMFS_SOURCE="path/to/initramfs/source"
+
+    CONFIG_BLK_DEV_INITRD: This option enables support for initial RAM disk (initramfs).
+    CONFIG_INITRAMFS_SOURCE: This option specifies the path to the initramfs source directory.
+
+    Save the changes to the .config file and close the file.
+
+    Compile the kernel as usual and run make install to install the new kernel and generate the initramfs image.
+```
+
 
 configuring git-email
 
