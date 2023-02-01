@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a2097926e9c5555d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "theory/boot grub.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -106,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "90a06c841893f236",
@@ -123,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theory/create a initramfs.md",
+                "file": "theory/boot grub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "theory/create a initramfs.md",
+                "file": "theory/boot grub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theory/create a initramfs.md"
+                "file": "theory/boot grub.md"
               }
             }
           }
@@ -184,17 +195,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c3a8ed9773069ec9",
+  "active": "a2097926e9c5555d",
   "lastOpenFiles": [
-    "theory/dev configuration.md",
+    "theory/create a initramfs.md",
     "theory/building.md",
+    "theory/boot grub.md",
+    "theory/dev configuration.md",
     "theory/remove-custom kernels.md",
     "theory/sources.md",
     "theory/patches.md",
     "theory/kernel trees.md",
     "theory/release.md",
-    "theory/objectives.md",
-    "Untitled.md",
-    "chapter1.md"
+    "theory/objectives.md"
   ]
 }
