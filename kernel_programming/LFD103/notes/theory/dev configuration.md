@@ -83,3 +83,5 @@ No attachements: Do not send patches as attachments, in General, avoid attachmen
 
 
 
+all new kernel version might add new configs, so after copying the distribution config from the /boot to our .config, we can use make listnewconfig to see the list of new configurations
+

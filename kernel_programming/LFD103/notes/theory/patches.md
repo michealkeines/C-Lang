@@ -32,3 +32,19 @@ if we are sending the updated version of previeus review `[PATCH v2]`
 
 ![[Pasted image 20230126033114.png]]
 
+
+![[Pasted image 20230204111628.png]]
+
+always run checkpatch 
+
+```bash
+git diff > temp; scripts/checkpatch.pl temp;
+```
+
+
+finally
+
+```
+git commit <filenames>
+git format-patch -1 <commit ID>
+```

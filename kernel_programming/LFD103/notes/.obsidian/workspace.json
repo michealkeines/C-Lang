@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/dev configuration.md",
+                "file": "theory/patches.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theory/boot grub.md",
+                "file": "theory/patches.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "theory/boot grub.md",
+                "file": "theory/patches.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theory/boot grub.md"
+                "file": "theory/patches.md"
               }
             }
           }
@@ -195,16 +195,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a2097926e9c5555d",
+  "active": "4d408ec82bcbecbd",
   "lastOpenFiles": [
-    "theory/create a initramfs.md",
     "theory/building.md",
-    "theory/boot grub.md",
     "theory/dev configuration.md",
+    "theory/kernel trees.md",
+    "theory/create a initramfs.md",
+    "theory/boot grub.md",
     "theory/remove-custom kernels.md",
     "theory/sources.md",
     "theory/patches.md",
-    "theory/kernel trees.md",
     "theory/release.md",
     "theory/objectives.md"
   ]
