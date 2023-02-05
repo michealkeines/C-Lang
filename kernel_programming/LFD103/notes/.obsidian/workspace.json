@@ -8,36 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "abe54fd08fbd3826",
+            "id": "8be629b8cbcf65de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/sources.md",
+                "file": "theory/compiling kernel modules.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "87476755d3ff9932",
+            "id": "a6793cfc17793e8a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/building.md",
+                "file": "theory/Testing.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4d408ec82bcbecbd",
+            "id": "53c131251aef06c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/patches.md",
+                "file": "theory/debugging.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "94dc6f36aba64234",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "opensource developer.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,8 +109,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "GRUB_TIMEOUT",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theory/patches.md",
+                "file": "opensource developer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "theory/patches.md",
+                "file": "opensource developer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theory/patches.md"
+                "file": "opensource developer.md"
               }
             }
           }
@@ -195,17 +207,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d408ec82bcbecbd",
+  "active": "94dc6f36aba64234",
   "lastOpenFiles": [
-    "theory/building.md",
-    "theory/dev configuration.md",
-    "theory/kernel trees.md",
-    "theory/create a initramfs.md",
     "theory/boot grub.md",
-    "theory/remove-custom kernels.md",
-    "theory/sources.md",
+    "theory/Testing.md",
+    "theory/debugging.md",
+    "opensource developer.md",
+    "theory/compiling kernel modules.md",
     "theory/patches.md",
-    "theory/release.md",
-    "theory/objectives.md"
+    "theory/building.md",
+    "theory/best practices for sending patches.md",
+    "theory/modules.md",
+    "build-latest-kernel.md"
   ]
 }
