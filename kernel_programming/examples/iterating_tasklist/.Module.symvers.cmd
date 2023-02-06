@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/iterating_tasklist/Module.symvers :=  scripts/mod/modpost -m      -o /home/micheal/C-Lang/kernel_programming/examples/iterating_tasklist/Module.symvers -T /home/micheal/C-Lang/kernel_programming/examples/iterating_tasklist/modules.order -i Module.symvers -e 

@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/iterating_tasklist/iterating_task.mod := printf '%s\n'   iterating_task.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/iterating_tasklist/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/iterating_tasklist/iterating_task.mod
