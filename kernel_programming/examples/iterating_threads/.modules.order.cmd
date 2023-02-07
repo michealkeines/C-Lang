@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/iterating_threads/modules.order := {   echo /home/micheal/C-Lang/kernel_programming/examples/iterating_threads/iterating_threads.o; :; } > /home/micheal/C-Lang/kernel_programming/examples/iterating_threads/modules.order

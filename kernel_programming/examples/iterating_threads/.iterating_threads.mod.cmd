@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/iterating_threads/iterating_threads.mod := printf '%s\n'   iterating_threads.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/iterating_threads/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/iterating_threads/iterating_threads.mod

@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "9ca6d46c457909c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "task struct.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ddc5407aef6a0736",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kernel modules.md",
+                "file": "task struct.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kernel modules.md",
+                "file": "task struct.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kernel modules.md"
+                "file": "task struct.md"
               }
             }
           }
@@ -158,13 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d78abf8dddd9253c",
+  "active": "9ca6d46c457909c1",
   "lastOpenFiles": [
+    "kernel modules.md",
     "arch of kernel.md",
     "story of loading the kernel.md",
     "kernel setup.md",
     "Kernel Process.md",
-    "kernel modules.md",
     "Untitled.md",
     "man.md"
   ]
