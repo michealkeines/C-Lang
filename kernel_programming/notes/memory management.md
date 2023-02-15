@@ -57,3 +57,33 @@ path - is just he path of teh file tha tis gettig mapped
 
 ```
 
+
+/proc/pid/smaps to get more infor into the memory segments
+
+VMA is kernel data structure, it gets mapped to very segment within a VAS
+
+this only applies for user VAS
+
+for kernel virtual address space there is not VMA
+
+red-black data strcture tree is used to hold VMAs
+
+task_struct holds this head pointer for process 
+
+current->mm->mmap
+
+
+when we use cat /proc/pid/maps, the code just interates over the processes VMAs and only print out important info
+
+kernel address space is divided usign a PAGE_OFFSET, and it divides the direct mapings and viruall memory
+
+below PAGE_OFFSET is low mem and above is high mem
+
+direct mappes are directly mapped to the phyical address, so these are called kernel logical address, that it that at fixed offset
+
+the direct mapping is equal the total physical memory size
+
+if the memory is too big, the rest of the physical memory is dirrectly mapped into ZONE_HIGHMEM
+
+high_memory inside the lowmemory region is mapped to a tempory location and get swapped?
+
