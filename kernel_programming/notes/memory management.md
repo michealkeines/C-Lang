@@ -87,3 +87,33 @@ if the memory is too big, the rest of the physical memory is dirrectly mapped in
 
 high_memory inside the lowmemory region is mapped to a tempory location and get swapped?
 
+Variables and Macros
+
+Vector table - holding an array of function pointer that could handler different interrupts
+
+VECTORS_BASE = start of the kernel vector table
+
+FIXADDR_START = start of the kernel fixmap region
+
+MODULES_VADDR = start of the kernel modules region
+
+MODULES_END = size of the kernel modules region
+
+KASAN_SHADOW_START = start of KASAN region
+
+KASAN_SHADOW_END = size of KASAN region
+
+PAGE_OFFSET = represents the start of the lowmem region
+
+high_memory = upper bound of direct mapped memory
+
+`_text _etect` start and end of kernel text region
+
+`__init_begin, __init_end` start and end of kernel init section
+
+`_sdata. _edata` start and end of static data region
+
+`__bss_start, __bss_stop` start and end of kernel BSS region, that is uninitiialized data
+
+![[Pasted image 20230216100827.png]]
+
