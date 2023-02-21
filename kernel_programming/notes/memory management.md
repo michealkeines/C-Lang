@@ -1,6 +1,10 @@
 
 ![[Pasted image 20230208115425.png]]
 
+one meory address will allways store 8 bits that is 1byte 
+
+in 32 bit arch, we can ask for 4bytes at a time - that is the bus size
+in 64 bit arch, we can ask for 8bytes at a time - that iis the bus isze
 
 u:k
 
