@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/modules.order := {   echo /home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/show_kernel_segments.o; :; } > /home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/modules.order

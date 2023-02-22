@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/show_kernel_segments.mod := printf '%s\n'   show_kernel_segments.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/show_kernel_segments.mod

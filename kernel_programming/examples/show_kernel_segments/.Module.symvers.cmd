@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/Module.symvers :=  scripts/mod/modpost -m      -o /home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/Module.symvers -T /home/micheal/C-Lang/kernel_programming/examples/show_kernel_segments/modules.order -i Module.symvers -e 
