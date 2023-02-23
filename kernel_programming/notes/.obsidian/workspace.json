@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kernel modules.md",
+                "file": "memory management.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kernel modules.md",
+                "file": "memory management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kernel modules.md",
+                "file": "memory management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kernel modules.md"
+                "file": "memory management.md"
               }
             }
           }
@@ -197,11 +197,11 @@
   },
   "active": "628513002d45896f",
   "lastOpenFiles": [
+    "kernel modules.md",
     "memory management.md",
     "Untitled.md",
     "paging.md",
     "task struct.md",
-    "kernel modules.md",
     "arch of kernel.md",
     "story of loading the kernel.md",
     "kernel setup.md",

@@ -121,3 +121,22 @@ high_memory = upper bound of direct mapped memory
 
 ![[Pasted image 20230216100827.png]]
 
+
+NULL trap page it has no permission set and any access to memory 0x000000 will be refering to this address, it triggers a fault handler which then passes SIGSIGV to the process that deferenced this address
+
+this is also called NULL pOINTER dereference
+
+![[Pasted image 20230223104436.png]]
+
+Address randomization
+
+settiing this using proc file system
+
+![[Pasted image 20230223110122.png]]
+
+```
+0 	(User mode) ASLR turned OFF; or can be turned off by passing the kernel parameter norandmaps at boot.
+1 	(User mode) ASLR is ON: mmap(2) based allocations, the stack, and the vDSO page is randomized. It also implies that shared library load locations and shared memory segments are randomized.
+2 	(User mode) ASLR is ON: all of the preceding (value 1) plus the heap location is randomized (since 2.6.25); this is the OS value by default.
+```
+
