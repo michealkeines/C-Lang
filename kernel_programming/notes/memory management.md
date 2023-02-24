@@ -140,3 +140,55 @@ settiing this using proc file system
 2 	(User mode) ASLR is ON: all of the preceding (value 1) plus the heap location is randomized (since 2.6.25); this is the OS value by default.
 ```
 
+## Physical Memory
+
+It is like tree like hierachy consisting of node, zones, and page frames
+
+Nodes are divided into zone and zone consist of page frames
+
+A Node abstracts  a physical bank of ram which is associated with one or more cpu cores
+
+Nodes:
+
+nodes are data structures used to denote a physical RAM modules onthe system
+
+it si pg_data_t this is the structure used forr holding information about phyical ram
+
+this is like actual hardware is being is abstracted via software metadata
+
+Non-Uniform Memory Access NUMA - where the core on which a kernel allocaiitn request ocurs does matter (memory is treated non  uniiformatly)
+
+Unform Memory access UMA - where the core on which kernel allocation request occurs dosnt matter. (memory iis treated uniformaly)
+
+
+
+NUMA arch always has more two cores and more physical ram, that way every core gets separate memory allocation, it assures that the memory allocation will consider the nearset possible Node in the physiclal memory
+
+
+
+If there are two or more nodes, it is a true  NUMA system and if only one node, then it is a fake NUMA 
+
+example:
+
+A total of 32 CPU cores (as seen by the OS) within two physical sockets (P#0 and P#1) on the motherboard. Each socket consists of a package of 8x2 CPU cores (8x2, as there are actually 8 physical cores each of which is hyperthreaded; the OS sees even the hyperthreaded cores as usable cores).
+A total of 32 GB of RAM split up into four physical banks of 8 GB each
+
+![[Pasted image 20230224102604.png]]
+
+
+A thread running some kernel or device code in process context, on CPU core #18, lets say it requests for some ram, now the kernel MM layer, understanding NUMA, will have the request servered from any free page fream in any zones on NUMA node 2 as it is the closest  to the processor code that the request is issued upon.
+
+
+just in case there is no page free frames in any zone within this NUMA node 2, the kernel will go accross the interconnect and request RAM page frames form another node zone
+
+Zones
+
+![[Pasted image 20230224103909.png]]
+
+The number of zones per node is dynamically determined by the kernel at boot.
+
+
+/proc/buddyinfo can used to view the node of node and zone and available page frames in the particular ram
+
+the kernel data structure that is related to zone is struct zone
+
