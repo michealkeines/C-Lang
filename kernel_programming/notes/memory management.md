@@ -192,3 +192,50 @@ The number of zones per node is dynamically determined by the kernel at boot.
 
 the kernel data structure that is related to zone is struct zone
 
+DIrect mapping
+
+direct mapping of RAM to the kernel segment starting at PAGE_OFFSET
+
+the physical ram is directly mapped into the kernel segement using one to one page frame mapping
+
+page 0 in physical frame will be mapped tinto virtual page 0 and so on
+
+if we know the addres sof the page 0, we can calculate the relative address of any opage it will be same blocks away for both physical and virtual
+
+![[Pasted image 20230225014442.png]]
+
+as the physical address starts from 0x00000000, we could just add or subttract to get the KVA and PA
+
+
+to get Physical address if KVA was given, we just have subtract PAGE_OFFSET from that
+
+
+PA =  KVA - PAGE_OFFSET
+
+=> 0xc0000003 + 0xc00000000
+=> 0x3
+
+
+
+to get KVA if PA was given, we just add PAGE_OFFSET to that
+
+KVA = PAGE_OFFSET + PA
+
+=> 0xc0000000 + 0x3
+=> 0xc0000003
+
+
+
+
+https://stackoverflow.com/questions/36639607/how-exactly-do-kernel-virtual-addresses-get-translated-to-physical-ram
+
+When the kernel starts it creates a single page table for itself (swapper_pg_dir) which just describes the kernel portion of the virtual address space and with no mappings for the user portion of the address space. Then every time a user process is created a new page table will be generated for that process, the portion which describes kernel memory will be the same in each of these page tables. This could be done by copying all of the relevant portion of swapper_pg_dir, but because page tables are normally a tree structures, the kernel is frequently able to graft the portion of the tree which describes the kernel address space from swapper_pg_dir into the page tables for each user process by just copying a few entries in the upper layer of the page table structure. As well as being more efficient in memory (and possibly cache) usage, it makes it easier to keep the mappings consistent. This is one of the reasons why the split between kernel and user virtual address spaces can only occur at certain addresses
+
+
+Part 1: Are kernel virtual addresses really translated by the TLB/MMU?
+
+Yes.
+
+Part 2: How is swapper_pg_dir "attached" to a user mode process.
+
+All page tables (whether swapper_pg_dir or those for user processes) have the same mappings for the portion used for kernel virtual addresses. So as the kernel context switches between user processes, changing the current page table, the mappings for the kernel portion of the address space remain the same.
