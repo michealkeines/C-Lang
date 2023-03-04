@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/modules.order := {   echo /home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/lowlevel_mem_lkm.o; :; } > /home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/modules.order

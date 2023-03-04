@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/lowlevel_mem_lkm.mod := printf '%s\n'   lowlevel_mem.o klib_llkd.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/lowlevel_mem_lkm.mod

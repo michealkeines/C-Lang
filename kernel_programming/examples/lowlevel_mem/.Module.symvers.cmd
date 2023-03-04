@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/Module.symvers :=  scripts/mod/modpost -m      -o /home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/Module.symvers -T /home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/modules.order -i Module.symvers -e 

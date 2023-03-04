@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/lowlevel_mem_lkm.o := ld -m elf_x86_64 -z noexecstack --no-warn-rwx-segments   -r -o /home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/lowlevel_mem_lkm.o @/home/micheal/C-Lang/kernel_programming/examples/lowlevel_mem/lowlevel_mem_lkm.mod 
