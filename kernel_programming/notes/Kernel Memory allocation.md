@@ -148,3 +148,5 @@ to check if the allocate memory is physical contginour memory, we coudl check th
 
 
 PFN physical frame number
+
+so whenever we are trying to sleep, we are just sceduling ourselfeve sof the cpu time slice
