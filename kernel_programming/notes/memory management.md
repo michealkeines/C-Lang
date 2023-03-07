@@ -239,3 +239,26 @@ Yes.
 Part 2: How is swapper_pg_dir "attached" to a user mode process.
 
 All page tables (whether swapper_pg_dir or those for user processes) have the same mappings for the portion used for kernel virtual addresses. So as the kernel context switches between user processes, changing the current page table, the mappings for the kernel portion of the address space remain the same.
+
+
+some of the kernel datastructures like task_struct, stasck_buff for IP, these are allocated a lot and having a separate cache for this particular data structures improves the overall perfoormance
+
+this method is called slab cache
+
+/proc/slabinfo
+
+to get the total memory used by slab cache, we /proc/meminfo
+
+main routines are in slab.h
+
+kmalloc, kzalloc
+
+in kmalloc we get a pointer to top of te new buf, and the data within it may be ranodm
+in kzalloc, we get a pointer to top of the new bug and the data will be zeros
+
+we use kfree to dellocate tmemroy that is allcoated using kmalloc or kzalloc
+
+for security reasons, we shoudl make sure ,we are zeroring out the buffer before freeing that address
+
+freeing as sson as an memset with zeors may not be the right solution against info leask as the compiler migght try to  optimize that step my not set setting anytiing in the memset operation and just freeing that meory
+
