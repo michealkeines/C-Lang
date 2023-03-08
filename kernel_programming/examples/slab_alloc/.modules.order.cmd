@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/slab_alloc/modules.order := {   echo /home/micheal/C-Lang/kernel_programming/examples/slab_alloc/slab_alloc.o; :; } > /home/micheal/C-Lang/kernel_programming/examples/slab_alloc/modules.order

@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/slab_alloc/Module.symvers :=  scripts/mod/modpost -m      -o /home/micheal/C-Lang/kernel_programming/examples/slab_alloc/Module.symvers -T /home/micheal/C-Lang/kernel_programming/examples/slab_alloc/modules.order -i Module.symvers -e 

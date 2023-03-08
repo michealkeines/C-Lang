@@ -262,3 +262,8 @@ for security reasons, we shoudl make sure ,we are zeroring out the buffer before
 
 freeing as sson as an memset with zeors may not be the right solution against info leask as the compiler migght try to  optimize that step my not set setting anytiing in the memset operation and just freeing that meory
 
+
+we can use vmstat -m to get the info about available slab memory
+
+kmalloc-rcl version are used like anti-fragmentation measure, tht it is reclaimable
+
