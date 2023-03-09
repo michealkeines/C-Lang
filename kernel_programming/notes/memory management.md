@@ -267,3 +267,26 @@ we can use vmstat -m to get the info about available slab memory
 
 kmalloc-rcl version are used like anti-fragmentation measure, tht it is reclaimable
 
+slab cache iteself can only allocate memeory max of 8kb per call
+
+high values are moved to page allocator
+
+
+we have device resource manager API, eg: devm_kmalloc, this is excatly like normal kmalloc, it is jsut hte developer doest have to free the memory, when the work is over, this manger itself will free those memory when the dirver is plugged off, or removed or if the deriverr is removed from the kernel using rmmod
+
+the first agument for this api, is a devie struct, that is meta date for the physical device, so it gets a relation with allocate memory => device
+
+if the needed memory is low, use slab allocator, if the neede memory is an order of2 then use page allocator
+
+if we allocate memory using kmalloc lets say 20byte, sizeof will give us 20byts, ksizre will give 32 bytes, becuase the total memory allocated by kmalloc for 20bytes willbe 32 bytes
+
+![[Pasted image 20230309111753.png]]
+
+three different implemenation of slab allocator inside kernel
+
+SLAB - under optiomized
+SLUB - unqueued allocator
+SLOB - simplified version (doesnt work on large systems)
+
+
+
