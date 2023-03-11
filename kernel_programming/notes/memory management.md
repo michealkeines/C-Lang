@@ -289,4 +289,6 @@ SLUB - unqueued allocator
 SLOB - simplified version (doesnt work on large systems)
 
 
+we can create custome slab cache for our custome data structures in our kernel modules
+
 
