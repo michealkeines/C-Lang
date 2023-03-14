@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/custom-slab/custom-slab.mod := printf '%s\n'   custom-slab.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/custom-slab/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/custom-slab/custom-slab.mod

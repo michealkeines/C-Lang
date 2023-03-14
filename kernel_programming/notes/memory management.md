@@ -292,3 +292,9 @@ SLOB - simplified version (doesnt work on large systems)
 we can create custome slab cache for our custome data structures in our kernel modules
 
 
+kmem_cache_create - to create the cache memeory, return the mem address
+kmem_cache_alloc - takes memory address of cache and return the obj address
+kmem_cache_free - take memory address of cache and address of obj that needs to be removed
+
+kmem_cache_destroy - removes the allocated cache memory
+

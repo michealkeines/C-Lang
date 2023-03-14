@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/custom-slab/Module.symvers :=  scripts/mod/modpost -m      -o /home/micheal/C-Lang/kernel_programming/examples/custom-slab/Module.symvers -T /home/micheal/C-Lang/kernel_programming/examples/custom-slab/modules.order -i Module.symvers -e 
