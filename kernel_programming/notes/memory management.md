@@ -298,3 +298,58 @@ kmem_cache_free - take memory address of cache and address of obj that needs to 
 
 kmem_cache_destroy - removes the allocated cache memory
 
+we can use vmstat to check the number of allocations for our custom struct
+
+```
+sudo vmstat -m | grep custo
+```
+
+
+in general there might be a lot of custom caches allocated, whenn there is need for memory, the kernel is inteligent enought to deallocate caches to free up some memory
+
+this process is called slab shrinking
+
+and it is done like, when we register a custom cache, we can also register in shrinker api, so that the kernel can call this when it needs space
+
+we just use register_skrinker with one paramter, that has to callback
+
+count_object - counts the number of freeable object that are preallocated
+scan_object - this free those freable objects.
+
+
+Debugging techinques for slab cache
+
+slab poisiong using SLAB_POSION
+
+```c
+custom_cache_loc = kmem_cache_create(
+
+CACHENAME,
+
+sizeof(struct custom_struct),
+
+sizeof(long),
+
+SLAB_POISON | SLAB_RED_ZONE | SLAB_HWCACHE_ALIGN,
+
+c_func
+
+);
+```
+
+this means, whenever the something is allocated wihtin this cache, iit will be filled with an ranodm pattern of some ascii chat
+
+``
+```
+#define POISON_INUSE    0x5a    /* for use-uninitialized poisoning */
+#define POISON_FREE     0x6b    /* for use-after-free poisoning */
+
+#define POISON_END      0xa5    /* end-byte of poisoning */
+```
+
+when we allocate something we set it to 0x5a
+when we free an used memory we set it to 0x6b
+
+the last byte will be set to 0xa5, if someoone writes over this address, we can detect the overrflow
+
+
