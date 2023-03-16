@@ -1,0 +1,1 @@
+cmd_/home/micheal/C-Lang/kernel_programming/examples/poison_test/poison-test.mod := printf '%s\n'   poison-test.o | awk '!x[$$0]++ { print("/home/micheal/C-Lang/kernel_programming/examples/poison_test/"$$0) }' > /home/micheal/C-Lang/kernel_programming/examples/poison_test/poison-test.mod

@@ -353,3 +353,5 @@ when we free an used memory we set it to 0x6b
 the last byte will be set to 0xa5, if someoone writes over this address, we can detect the overrflow
 
 
+![[Pasted image 20230316120029.png]]
+
