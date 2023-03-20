@@ -355,3 +355,9 @@ the last byte will be set to 0xa5, if someoone writes over this address, we can 
 
 ![[Pasted image 20230316120029.png]]
 
+
+
+Vmalloc doesnt grantee phyically contigenous pages
+
+vmalloc is usefull when you need buf of size greater than 4mb and if youre in porcess context
+
