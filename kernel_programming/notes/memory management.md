@@ -361,3 +361,17 @@ Vmalloc doesnt grantee phyically contigenous pages
 
 vmalloc is usefull when you need buf of size greater than 4mb and if youre in porcess context
 
+it will always be on page-boundary
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/
+
+vmalloc memory is lazyly synced that it will only map itself to an actualy phyical page every time a page fault occurs
+
+`void *kvmalloc_node(size_t size, gfp_t flags, int node);`
+
+we coudll also allocate to a particular NUMA node in the ram if we know the node id
+
+if 8 pages or less is requested, the kmalloc will try indefinitly without returning, unless we specifu GFP_NORETRY
+
+
+
