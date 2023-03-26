@@ -375,3 +375,47 @@ if 8 pages or less is requested, the kmalloc will try indefinitly without return
 
 
 
+general picture of all possible APIs
+
+
+
+![[Pasted image 20230326051858.png]]
+
+in the end every memory allocation has to go through page BDA allocator
+
+if we use kmalloc and firends we directly allocate physical memory
+
+if we use vmalloc and friends we get virutal pages and they get resoved through page fault
+
+![[Pasted image 20230326054253.png]]
+
+if we need more than 4mb and you nned physical contaginous, the nwe can use dma_alloc api
+
+this helps for every large allocations
+
+## kernel housekeeping, OOM killer
+
+kswapd mointers all the memorry to reclaim them often
+
+it is done node:zone basics
+
+kernel uses watermark level to find which memory to claim
+
+min/low/ligh per zone
+
+so what happens when there nothin  left to reclaim and evverything is full, in this case the OOM killer job is started, it will send SIGKILL to the processes that are using huge memory
+
+this will be invoked based on some policies 
+
+like overcommit limit 
+
+if the swap space + 50% of physical ram, we kill it
+
+we can configure this policy here /proc/sys/vm
+
+mostly when a alloc_page fails and it is out of memory there policy are check or process
+
+![[Pasted image 20230326060539.png]]
+
+we can set a pid to not touched by oom even if ti s usinga lot by seting oom_score_adj
+

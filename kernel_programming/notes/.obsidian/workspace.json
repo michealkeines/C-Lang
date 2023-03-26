@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "443f3b2de3d30ffa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "task struct.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ddc5407aef6a0736",
             "type": "leaf",
             "state": {
@@ -43,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,19 +182,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17b5cf65625705d6",
+  "active": "dda675a98a81ea49",
   "lastOpenFiles": [
+    "attachments/Pasted image 20230326060539.png",
+    "attachments/Pasted image 20230326054253.png",
+    "Kernel Process.md",
+    "task struct.md",
+    "attachments/Pasted image 20230326051858.png",
+    "memory management.md",
     "man.md",
     "Kernel Memory allocation.md",
     "scheduling.md",
-    "memory management.md",
     "attachments/Pasted image 20230316120029.png",
     "attachments/Pasted image 20230309111753.png",
-    "Kernel Process.md",
     "kernel modules.md",
     "Untitled.md",
     "paging.md",
-    "task struct.md",
     "arch of kernel.md",
     "story of loading the kernel.md",
     "kernel setup.md"
