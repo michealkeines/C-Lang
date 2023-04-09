@@ -8,55 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8be629b8cbcf65de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "theory/compiling kernel modules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a6793cfc17793e8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "theory/Testing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "53c131251aef06c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "theory/debugging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "94dc6f36aba64234",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "opensource developer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c3a8ed9773069ec9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -68,19 +20,19 @@
             }
           },
           {
-            "id": "a2097926e9c5555d",
+            "id": "ad28d1f715fa284a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/boot grub.md",
+                "file": "build-latest-kernel.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GRUB_TIMEOUT",
+                "query": "qe",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "opensource developer.md",
+                "file": "build-latest-kernel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "opensource developer.md",
+                "file": "build-latest-kernel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "opensource developer.md"
+                "file": "build-latest-kernel.md"
               }
             }
           }
@@ -207,17 +159,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "94dc6f36aba64234",
+  "active": "ad28d1f715fa284a",
   "lastOpenFiles": [
-    "theory/boot grub.md",
-    "theory/Testing.md",
+    "theory/create a initramfs.md",
+    "build-latest-kernel.md",
     "theory/debugging.md",
-    "opensource developer.md",
+    "theory/Testing.md",
     "theory/compiling kernel modules.md",
+    "theory/boot grub.md",
+    "opensource developer.md",
     "theory/patches.md",
     "theory/building.md",
     "theory/best practices for sending patches.md",
-    "theory/modules.md",
-    "build-latest-kernel.md"
+    "theory/modules.md"
   ]
 }

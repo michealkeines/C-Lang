@@ -104,3 +104,39 @@ Preemption points are a way to ensure that the scheduler can preempt a running t
  * WARNING: must be called with preemption disabled!
 ```
 
+
+
+debegginh
+
+we can use lttng, trace-cmd and kernel shark
+
+
+
+cpu affinity
+
+by default all the bit are set, so a process can run on any cpu core
+
+
+eg: in a for cour cpu
+
+by default all bits will be set i.e 1111 -> all four cores
+
+if 1010 -> one and third core is available for this particular thread
+
+use cases:
+
+
+    Cache invalidation (and thus unpleasant cache "bouncing") can be greatly reduced by ensuring a thread always runs on the same CPU core.
+    Thread migration costs between cores are effectively eliminated.
+    CPU reservation—a strategy to bestow the core(s) exclusively to one thread by guaranteeing all other threads are explicitly not allowed to execute upon that core.
+
+
+
+we can use taskset to get and set affinity for processes
+
+
+get: taskset -p pid
+set: taskset affinity process
+
+taskset 15 watch -n 1 ls
+
