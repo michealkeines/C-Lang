@@ -138,5 +138,4 @@ we can use taskset to get and set affinity for processes
 get: taskset -p pid
 set: taskset affinity process
 
-taskset 15 watch -n 1 ls
-
+taskset 15 watch -n 1 lsc
