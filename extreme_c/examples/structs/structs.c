@@ -1,25 +1,8 @@
 #include <stdio.h>
 #include <stdint.h>
+#include "./types.h"
 
-typedef struct {
-  char first;
-  char second;
-  char third;
-  short fourth;
-} sample_t;
-
-typedef struct __attribute__((__packed__)) {
-    uint32_t red;
-    uint32_t green;
-    uint32_t blue;
-    uint32_t orange;
-    uint32_t yellow;
-} color_t;
-
-typedef struct {
-    int64_t x_axis;
-    int64_t y_axis;
-} vector_t;
+extern uint8_t find_max(vector_t *, vector_t *);
 
 int main()
 {
@@ -36,6 +19,11 @@ int main()
         .y_axis = 4
     };
 
+    vector_t sample_location2 = {
+        .x_axis = 1,
+        .y_axis = 3
+    };
+
     sample_t sample = {
         .first = 'a',
         .second = 'b',
@@ -47,4 +35,12 @@ int main()
     printf("size of vector: %d, val: %d, var: %d\n", sizeof(vector_t), sizeof(int64_t), sizeof(sample_location));
     printf("size of sample: %d, var: %d\n", sizeof(sample_t), sizeof(sample));
 
+    uint8_t check = find_max(&sample_location, &sample_location2);
+
+    if (check == 1)
+    {
+        printf("a is greater\n");
+    }
+
+    return 0;
 }
