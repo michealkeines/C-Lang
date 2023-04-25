@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ed4d93921a83dce4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "object files.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compiling.md",
+                "file": "object files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compiling.md",
+                "file": "object files.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "compiling.md"
+                "file": "object files.md"
               }
             }
           }
@@ -183,12 +195,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0b8126870c75b6a",
+  "active": "ed4d93921a83dce4",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20230425125415.png",
+    "compiling.md",
+    "object files.md",
     "Attachments/Pasted image 20230423085608.png",
     "Attachments/Pasted image 20230423084920.png",
     "structs.md",
-    "compiling.md",
     "pointers.md",
     "macros.md",
     "Attachments"
