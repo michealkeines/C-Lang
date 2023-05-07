@@ -8,79 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "55365d8781a41781",
+            "id": "b81bf71bc4570818",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "macros.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6b7e15bddf215c3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pointers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c8973ac1675769b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "structs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0b8126870c75b6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compiling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ed4d93921a83dce4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "object files.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6071d6e46cb37ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "process.md",
+                "file": "oop in c.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "process.md",
+                "file": "oop in c.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "process.md",
+                "file": "oop in c.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "process.md"
+                "file": "oop in c.md"
               }
             }
           }
@@ -207,11 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6071d6e46cb37ee",
+  "active": "b81bf71bc4570818",
   "lastOpenFiles": [
+    "process.md",
+    "oop in c.md",
     "Attachments/Pasted image 20230501094340.png",
     "object files.md",
-    "process.md",
     "Attachments/Pasted image 20230425125415.png",
     "compiling.md",
     "Attachments/Pasted image 20230423085608.png",
