@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "642761659eb4fe9a",
+    "type": "split",
+    "children": [
+      {
+        "id": "af80d1cb99c8811d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2e9c9aa63bc9622",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ArrayandHashing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0af744b09872b0c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ArrayandHashing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1c00bae355e7725f",
+    "type": "split",
+    "children": [
+      {
+        "id": "006db5e0cb97f469",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "597bc7cc9cf511ad",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fe3f77d473332fdf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "43ce33390e5ec638",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "446f681f1d330f46",
+    "type": "split",
+    "children": [
+      {
+        "id": "042c0883d456960d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d38ace96b7949f5e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ArrayandHashing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "370142f9a34771df",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ArrayandHashing.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "af0782887249aabb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1c75249343323c76",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ArrayandHashing.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0af744b09872b0c5",
+  "lastOpenFiles": [
+    "code/group_anagrams.py",
+    "code/__pycache__/twosum.cpython-310-pytest-7.1.2.pyc",
+    "code/twosum.py",
+    "code/__pycache__/valid_anagram.cpython-310-pytest-7.1.2.pyc",
+    "code/valid_anagram.py",
+    "code/__pycache__/contains_duplicate.cpython-310-pytest-7.1.2.pyc.1155138",
+    "code/__pycache__/contains_duplicate.cpython-310-pytest-7.1.2.pyc",
+    "code/__pycache__",
+    "code/contains_duplicate.py",
+    "code",
+    "RoadMap.md",
+    "ArrayandHashing.md",
+    "Untitled 1.md",
+    "Attachments"
+  ]
+}
